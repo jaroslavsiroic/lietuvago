@@ -3,7 +3,8 @@
     package="com.example.ajs.LietuvaGO">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -30,7 +31,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.ajs.LietuvaGO.RegisterActivity" />
-        <activity android:name="com.example.ajs.LietuvaGO.UserAreaActivity"></activity>
+        <activity android:name="com.example.ajs.LietuvaGO.UserAreaActivity"/>
+        <activity android:name="com.example.ajs.LietuvaGO.CustomInfoWindow" android:theme="@style/AppTheme.CustomTheme"/>
+            <!--android:theme="@style/AppTheme.CustomTheme"-->
     </application>
 
 </manifest>
